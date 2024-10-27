@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2e2e2e, #4a4a4a);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+h1 {
+    font-size: 6rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 0px 10px #fff;
+}
+h3 {
+    text-shadow: 2px 0px 10px #cba;
+    font-size: 5rem;
+    font-family: monospace;
+}
+small {
+    font-size: 3rem;
+}
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    small {
+        font-size: 1.5rem;
+    }
+}
+
+button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+/* Start Button Styling */
+.start-btn {
+    background: linear-gradient(135deg, #6aff88, #99ffa4, #c2ffb9);
+    box-shadow: 0px 4px 10px rgba(106, 255, 136, 0.4);
+}
+
+.start-btn:hover {
+    background: linear-gradient(135deg, #99ffa4, #c2ffb9, #6aff88);
+    transform: translateY(-2px);
+}
+
+.start-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 5px rgba(106, 255, 136, 0.4);
+}
+
+/* Stop Button Styling */
+.stop-btn {
+    background: linear-gradient(135deg, #ff6a88, #ff99a4, #ffc2b9);
+    box-shadow: 0px 4px 10px rgba(255, 106, 136, 0.4);
+}
+
+.stop-btn:hover {
+    background: linear-gradient(135deg, #ff99a4, #ffc2b9, #ff6a88);
+    transform: translateY(-2px);
+}
+
+.stop-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 5px rgba(255, 106, 136, 0.4);
+}
+.reset-btn {
+    background: linear-gradient(135deg, #6a88ff, #99a4ff, #b9c2ff);
+    box-shadow: 0px 4px 10px rgba(106, 136, 255, 0.4);
+}
+
+.reset-btn:hover {
+    background: linear-gradient(135deg, #99a4ff, #b9c2ff, #6a88ff);
+    transform: translateY(-2px);
+}
+
+.reset-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 5px rgba(106, 136, 255, 0.4);
+}
+button:focus {
+    outline: 2px solid #fff; 
+    outline-offset: 2px;
+}   
